@@ -112,7 +112,7 @@ class Person
 ## Access Modifiers
 Access modifiers is used to set the access level/visibility for classes, fields, methods and properties.
 | Modifier        | Description           |
-| ------------- |:-------------:|
+| :-------------: |-------------|
 | public      | The code is accessible for all classes |
 | private      | The code is only accessible within the same class      |
 | protected | The code is accessible within the same class, or in a class that is inherited from that class.      |
