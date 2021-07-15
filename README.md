@@ -3,16 +3,38 @@
 ## Class
 A class is a user-defined blueprint or prototype from which objects are created.
 (A class can be public or internal etc. By default, modifier of class is internal)
+#### Example
+```
+class Car 
+{
+  string color = "red";
+}
+```
 
 ## Object
 A instance which is created using a class is called Object. An object is basically a block of memory that has been allocated and configured according to the blueprint.
+#### Example
+```
+Car honda = new Car();
+```
 
 ## Methods
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments.
+#### Example
+```
+class Program
+{
+  static void MyMethod() 
+  {
+    // code to be executed
+    Console.WriteLine("This is a test");
+  }
+}
+```
 
 ## Properties
 A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
-### Example
+#### Example
 ```
 class Person
 {
