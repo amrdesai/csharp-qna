@@ -18,6 +18,19 @@ A instance which is created using a class is called Object. An object is basical
 Car honda = new Car();
 ```
 
+## Field/Variable
+When a variable is declared directly in a class, it is often referred to as a field (or attribute).
+#### Example
+```
+public Class Car
+{
+  string color = "red";
+  private DateTime _date;
+  public string Day = "Monday";
+  
+}
+```
+
 ## Method
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments.
 #### Example
