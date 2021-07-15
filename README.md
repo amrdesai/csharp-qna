@@ -18,6 +18,9 @@ A instance which is created using a class is called Object. An object is basical
 Car honda = new Car();
 ```
 
+## Class Members
+Fields and methods inside classes are often referred to as "Class Members"
+
 ## Field/Variable
 When a variable is declared directly in a class, it is often referred to as a field (or attribute).
 #### Example
