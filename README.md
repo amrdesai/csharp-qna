@@ -78,8 +78,37 @@ class Person
   }
 }
 ```
+## Constructor
+A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
+#### Example
+```c#
+// Create a Person class
+class Person
+{
+  public string name;  // Create a field
 
-•	Constructor: xx
+  // Create a class constructor for the Person class
+  public Person()
+  {
+    Name = "John"; // Sets the initial value for name
+  }
+  
+  // Create a class constructor with parameter // This is also an example of constructor overloading
+  public Person(string name)
+  {
+    Name = name; 
+  }
+
+  static void Main(string[] args)
+  {
+    Person John = new Person();  // Create an object of the Person Class (this will call the constructor)
+    Console.WriteLine(John.model);  // Print the value of model
+  }
+}
+
+// Outputs: John
+```
+
 •	Destructor: xx
 •	Return Types: xx
 •	Access Modifiers: xx 
