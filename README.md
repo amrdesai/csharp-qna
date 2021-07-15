@@ -18,7 +18,7 @@ A instance which is created using a class is called Object. An object is basical
 Car honda = new Car();
 ```
 
-## Methods
+## Method
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments.
 #### Example
 ```
@@ -29,6 +29,21 @@ class Program
     // code to be executed
     Console.WriteLine("This is a test");
   }
+}
+```
+
+## Method Overloading
+In C# with method overloading, multiple methods can have the same name with different parameters:
+#### Example
+```
+static int Add2Nums(int x, int y)
+{
+  return x + y;
+}
+
+static double Add2Nums(double x, double y)
+{
+  return x + y;
 }
 ```
 
