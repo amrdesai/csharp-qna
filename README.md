@@ -7,8 +7,25 @@ A class is a user-defined blueprint or prototype from which objects are created.
 ## Object
 A instance which is created using a class is called Object. An object is basically a block of memory that has been allocated and configured according to the blueprint.
 
-## Methods: xx
-## Properties: xx
+## Methods
+A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments.
+
+## Properties
+A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
+### Example
+```
+class Person
+{
+  private string name; // field
+
+  public string Name   // property
+  {
+    get { return name; }   // get method
+    set { name = value; }  // set method
+  }
+}
+```
+
 •	Constructor: xx
 •	Destructor: xx
 •	Return Types: xx
