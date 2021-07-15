@@ -14,14 +14,14 @@ class Car
 ## Object
 A instance which is created using a class is called Object. An object is basically a block of memory that has been allocated and configured according to the blueprint.
 #### Example
-```
+```c#
 Car honda = new Car();
 ```
 
 ## Field/Variable
 When a variable is declared directly in a class, it is often referred to as a field (or attribute).
 #### Example
-```
+```c#
 public Class Car
 {
   string color = "red";
@@ -34,7 +34,7 @@ public Class Car
 ## Method
 A method is a code block that contains a series of statements. A program causes the statements to be executed by calling the method and specifying any required method arguments.
 #### Example
-```
+```c#
 class Program
 {
   static void MyMethod() 
@@ -48,7 +48,7 @@ class Program
 ## Method Overloading
 In C# with method overloading, multiple methods can have the same name with different parameters:
 #### Example
-```
+```c#
 static int Add2Nums(int x, int y)
 {
   return x + y;
@@ -63,7 +63,7 @@ static double Add2Nums(double x, double y)
 ## Properties
 A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
 #### Example
-```
+```c#
 class Person
 {
   private string name; // field
