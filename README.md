@@ -4,7 +4,7 @@
 A class is a user-defined blueprint or prototype from which objects are created.
 (A class can be public or internal etc. By default, modifier of class is internal)
 #### Example
-```
+```c#
 class Car 
 {
   string color = "red";
