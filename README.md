@@ -124,12 +124,46 @@ class Person
 }
 ```
 
+## Inheritance
+In C#, it is possible to inherit fields and methods from one class to another. Inheritance concepts are divided into two categories:
+- Base Class (parent) - the class being inherited from
+- Derived Class (child) - the class that inherits from another class
+#### Example
+```c#
+class Vehicle  // base class (parent) 
+{
+  public string brand = "Honda";  // Vehicle field
+  public void Honk()             // Vehicle method 
+  {                    
+    Console.WriteLine("Peep, peep!");
+  }
+}
+
+class Car : Vehicle  // derived class (child)
+{
+  public string modelName = "Civic";  // Car field
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (From the Vehicle class) on the myCar object
+    myCar.Honk();
+
+    // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
+    Console.WriteLine(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+
 
 
 •	Destructor: xx
 •	Return Types: xx
-•	Encapsulation: xx
-•	Inheritance: xx
 •	Abstract Classes: xx
 •	This keyword: xx
 •	Base Keyword: xx
