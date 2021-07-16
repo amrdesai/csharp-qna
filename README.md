@@ -231,20 +231,92 @@ class Program
 }
 ```
 ```
-#### The output will be:
+// The output will be:
 The animal makes a sound
 The cat says: meow meow
 The dog says: woof woof
 ```
 
+## Abstract Class
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces.
+The abstract keyword is used for classes and methods:
+- Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+- Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
+An abstract class can have both abstract and regular methods:
+```c#
+abstract class Animal 
+{
+  public abstract void animalSound();
+  public void sleep() 
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+```
+From the example above, it is not possible to create an object of the Animal class:
+```c#
+Animal myObj = new Animal(); // Will generate an error (Cannot create an instance of the abstract class or interface 'Animal')
+```
+To access the abstract class, it must be inherited from another class. Let's convert the Animal class we used in the Polymorphism chapter to an abstract class.
+```c#
+// Abstract class
+abstract class Animal
+{
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep()
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+
+// Derived class (inherit from Animal)
+class Cat : Animal
+{
+  public override void animalSound()
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The cat says: meow meow");
+  }
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Cat myCat = new Cat(); // Create a Cat object
+    myCat.animalSound();  // Call the abstract method
+    myCat.sleep();  // Call the regular method
+  }
+}
+```
+
+## Interface
+Interfaces is another way to achieve abstraction in C#
+An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)
+It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.
+By default, members of an interface are abstract and public.
+#### Example
+```c#
+// interface
+interface IAnimal 
+{
+  void AnimalSound(); // interface method (does not have a body)
+  void Run(); // interface method (does not have a body)
+}
+```
+[Read More](https://www.w3schools.com/cs/cs_interface.php)
+
+
+
 
 
 •	Destructor: xx
 •	Return Types: xx
-•	Abstract Classes: xx
 •	This keyword: xx
 •	Base Keyword: xx
-•	Interfaces: xx
 •	Sealed Class: xx
 •	Static Variables: xx
 •	Static Class: xx
