@@ -114,12 +114,12 @@ A property is like a combination of a variable and a method, and it has two meth
 ```c#
 class Person
 {
-  private string name; // field
+  private string _name; // field
 
   public string Name   // property
   {
-    get { return name; }   // get method
-    set { name = value; }  // set method
+    get { return _name; }   // get method
+    set { _name = value; }  // set method
   }
 }
 ```
