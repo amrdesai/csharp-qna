@@ -128,6 +128,7 @@ class Person
 In C#, it is possible to inherit fields and methods from one class to another. Inheritance concepts are divided into two categories:
 - Base Class (parent) - the class being inherited from
 - Derived Class (child) - the class that inherits from another class
+To inherit from a class, use the : symbol.
 #### Example
 ```c#
 class Vehicle  // base class (parent) 
@@ -159,7 +160,25 @@ class Program
   }
 }
 ```
+### Why And When To Use "Inheritance"?
+It is useful for code reusability: reuse fields and methods of an existing class when you create a new class.
 
+## Sealed keyword
+If you don't want other classes to inherit from a class, use the sealed keyword
+#### Example
+```c#
+sealed class Human 
+{
+  ...
+}
+
+class Person : Human 
+{
+  ...
+}
+// This will throw an error message like this: 'Person': cannot derive from sealed type 'Human'
+
+```
 
 
 •	Destructor: xx
