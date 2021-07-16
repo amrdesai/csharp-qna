@@ -108,6 +108,12 @@ The meaning of Encapsulation, is to make sure that "sensitive" data is hidden fr
 - Declare fields/variables as private
 - Provide public get and set methods, through properties, to access and update the value of a private field
 
+## Why to use Encapsulation?
+- Better control of class members (reduce the possibility of yourself (or others) to mess up the code)
+- Fields can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+- Flexible: the programmer can change one part of the code without affecting other parts
+- Increased security of data
+
 ## Properties
 A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
 #### Example
@@ -152,7 +158,7 @@ class Program
     // Create a myCar object
     Car myCar = new Car();
 
-    // Call the honk() method (From the Vehicle class) on the myCar object
+    // Call the Honk() method (From the Vehicle class) on the myCar object
     myCar.Honk();
 
     // Display the value of the brand field (from the Vehicle class) and the value of the modelName from the Car class
@@ -180,6 +186,58 @@ class Person : Human
 
 ```
 
+## Polymorphism
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+Inheritance lets us inherit fields and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+And in order to implement the polymorphic behaviour, virtual keyword is added to the method inside the base class, and by using the override keyword for each derived class methods.
+#### Example
+```c#
+class Animal  // Base class (parent) 
+{
+  public virtual void animalSound() 
+  {
+    Console.WriteLine("The animal makes a sound");
+  }
+}
+
+class Cat : Animal  // Derived class (child) 
+{
+  public override void animalSound() 
+  {
+    Console.WriteLine("The cat says: meow meow");
+  }
+}
+
+class Dog : Animal  // Derived class (child) 
+{
+  public override void animalSound() 
+  {
+    Console.WriteLine("The dog says: woof woof");
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myCat = new Cat();  // Create a Cat object
+    Animal myDog = new Dog();  // Create a Dog object
+
+    myAnimal.animalSound();
+    myCat.animalSound();
+    myDog.animalSound();
+  }
+}
+```
+```
+The output will be:
+The animal makes a sound
+The cat says: meow meow
+The dog says: woof woof
+```
+
+
 
 •	Destructor: xx
 •	Return Types: xx
@@ -187,7 +245,6 @@ class Person : Human
 •	This keyword: xx
 •	Base Keyword: xx
 •	Interfaces: xx
-•	Polymorphism: xx
 •	Sealed Class: xx
 •	Static Variables: xx
 •	Static Class: xx
