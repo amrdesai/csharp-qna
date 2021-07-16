@@ -231,7 +231,7 @@ class Program
 }
 ```
 ```
-The output will be:
+#### The output will be:
 The animal makes a sound
 The cat says: meow meow
 The dog says: woof woof
