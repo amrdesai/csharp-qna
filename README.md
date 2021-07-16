@@ -63,21 +63,6 @@ static double Add2Nums(double x, double y)
 }
 ```
 
-## Properties
-A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
-#### Example
-```c#
-class Person
-{
-  private string name; // field
-
-  public string Name   // property
-  {
-    get { return name; }   // get method
-    set { name = value; }  // set method
-  }
-}
-```
 ## Constructor
 A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
 #### Example
@@ -117,6 +102,28 @@ Access modifiers is used to set the access level/visibility for classes, fields,
 | private      | The code is only accessible within the same class      |
 | protected | The code is accessible within the same class, or in a class that is inherited from that class.      |
 | internal | The code is only accessible within its own assembly, but not from another assembly.      |
+
+## Encapsulation
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+- Declare fields/variables as private
+- Provide public get and set methods, through properties, to access and update the value of a private field
+
+## Properties
+A property is like a combination of a variable and a method, and it has two methods: a get and a set method.
+#### Example
+```c#
+class Person
+{
+  private string name; // field
+
+  public string Name   // property
+  {
+    get { return name; }   // get method
+    set { name = value; }  // set method
+  }
+}
+```
+
 
 
 •	Destructor: xx
