@@ -296,7 +296,7 @@ class Program
 ## Interface
 Interfaces is another way to achieve abstraction in C#
 An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)
-It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.
+It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class. [Read More...](https://www.w3schools.com/cs/cs_interface.php)
 By default, members of an interface are abstract and public.
 #### Example
 ```c#
@@ -307,7 +307,7 @@ interface IAnimal
   void Run(); // interface method (does not have a body)
 }
 ```
-[Read More](https://www.w3schools.com/cs/cs_interface.php)
+
 
 
 
