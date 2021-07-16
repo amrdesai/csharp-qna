@@ -64,7 +64,7 @@ static double Add2Nums(double x, double y)
 ```
 
 ## Constructor
-A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields
+A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created. It can be used to set initial values for fields.
 #### Example
 ```c#
 // Create a Person class
@@ -188,7 +188,9 @@ class Person : Human
 
 ## Polymorphism
 Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
 Inheritance lets us inherit fields and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+
 And in order to implement the polymorphic behaviour, virtual keyword is added to the method inside the base class, and by using the override keyword for each derived class methods.
 #### Example
 ```c#
@@ -239,7 +241,9 @@ The dog says: woof woof
 
 ## Abstract Class
 Data abstraction is the process of hiding certain details and showing only essential information to the user.
+
 Abstraction can be achieved with either abstract classes or interfaces.
+
 The abstract keyword is used for classes and methods:
 - Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
 - Abstract method: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
@@ -295,8 +299,11 @@ class Program
 
 ## Interface
 Interfaces is another way to achieve abstraction in C#
-An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies)
+
+An interface is a completely "abstract class", which can only contain abstract methods and properties (with empty bodies).
+
 It is considered good practice to start with the letter "I" at the beginning of an interface, as it makes it easier for yourself and others to remember that it is an interface and not a class.
+
 By default, members of an interface are abstract and public. [Read more...](https://www.w3schools.com/cs/cs_interface.php)
 #### Example
 ```c#
